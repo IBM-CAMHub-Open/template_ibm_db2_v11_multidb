@@ -762,6 +762,11 @@ variable "DB2Node01_dns_servers" {
   description = "DNS servers for the virtual network adapter"
 }
 
+variable "DB2Node01_domain" {
+	  type = "string"
+	  description = "Domain name of virtual machine"
+	}
+
 variable "DB2Node01_network_interface_label" {
   description = "vSphere port group or network label for virtual machine's vNIC"
 }
@@ -837,6 +842,7 @@ resource "vsphere_virtual_machine" "DB2Node01" {
   cluster      = "${var.DB2Node01_cluster}"
   dns_suffixes = "${var.DB2Node01_dns_suffixes}"
   dns_servers  = "${var.DB2Node01_dns_servers}"
+  domain       = "${var.DB2Node01_domain}"
 
   network_interface {
     label              = "${var.DB2Node01_network_interface_label}"
