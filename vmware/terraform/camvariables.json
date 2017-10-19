@@ -1879,7 +1879,7 @@
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "virualmachine"
+      "group_name": "virtualmachine"
     },
     {
       "name": "storage-volume_disk_size",
