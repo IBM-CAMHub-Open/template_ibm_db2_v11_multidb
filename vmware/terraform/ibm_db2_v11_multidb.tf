@@ -58,7 +58,6 @@ variable "ibm_stack_name" {
   description = "A unique stack name."
 }
 
-#### Default OS Admin User Map ####
 
 ##### DB2Node01 variables #####
 #Variable : DB2Node01-image
@@ -614,7 +613,7 @@ variable "DB2Node01_db2_instances_instance2_instance_password" {
 variable "DB2Node01_db2_instances_instance2_instance_prefix" {
   type = "string"
   description = "Specifies the DB2 instance prefix"
-  default = "INST1"
+  default = "INST2"
 }
 
 #Variable : DB2Node01_db2_instances_instance2_instance_type
@@ -832,6 +831,8 @@ variable "ibm_sw_repo_user" {
   default = "repouser"
 }
 
+
+##### virtualmachine variables #####
 
 ##### ungrouped variables #####
 
